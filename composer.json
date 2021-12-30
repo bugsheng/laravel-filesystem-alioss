@@ -1,0 +1,40 @@
+{
+    "name": "bugsheng/laravel-filesystem-alioss",
+	"description": "No description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "BugSheng",
+            "email": "bug_sheng@126.com"
+        }
+    ],
+    "require": {
+        "php": "^7.0|^8.0",
+        "aliyuncs/oss-sdk-php": "^2.3",
+        "illuminate/filesystem": "^5.5|^6.0|^7.0|^8.0",
+        "illuminate/http": "^5.5|^6.0|^7.0|^8.0",
+        "illuminate/support": "^5.5|^6.0|^7.0|^8.0",
+        "league/flysystem": "~1.0.8",
+        "bugsheng/functional-respond": "~1.0",
+        "ramsey/uuid": "~4.0"
+    },
+	"autoload": {
+		"psr-4": {
+            "BugSheng\\Laravel\\Filesystem\\AliOss\\": "src/"
+        }
+	},
+	"minimum-stability": "dev",
+	"extra": {
+		"laravel": {
+            "providers": [
+              "BugSheng\\Laravel\\Filesystem\\AliOss\\ServiceProvider"
+            ]
+        }
+	},
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://mirrors.aliyun.com/composer/"
+        }
+    }
+}
